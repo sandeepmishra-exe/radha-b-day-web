@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Happy Birthday!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Swapna!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        h1 { color: #ff69b4; text-align: center; }
+        p { text-align: center; }
+    </style>
 </head>
 <body>
-    <h1>Happy Birthday!</h1>
-    <p>Welcome to the most epic birthday party! Get ready to eat cake like it’s your job.</p>
-    <p>Don’t worry about the calories; they don’t count today! Just make sure to leave room for more cake!</p>
-    <p>Remember, age is merely the number of years the world has been enjoying you. So eat, drink, and act like a kid again!</p>
-    <p>Why did the birthday cake go to school? Because it wanted to be a smartie!</p>
-    <p>Let’s party like it’s 1999—unless you were born in 1999, then let’s party like it’s your birth year!</p>
-    <p>Here’s to another trip around the sun! Don’t forget to grab your party hats and a sense of humor!</p>
-    <p>Thank you for joining the fiesta! If you can read this, you’re clearly at the wrong party... or you need more cake!</p>
+    <h1>Happy 19th Birthday, Swapna!</h1>
+    <p>Here are some goofy birthday messages for you:</p>
+    <ul>
+        <li>May your day be filled with cake and ice cream!</li>
+        <li>Another year older, but definitely not wiser!</li>
+        <li>You’re not getting older, you're just increasing in value!</li>
+    </ul>
+    <p>With all my love, Yours Moggu</p>
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src="WhatsApp Image 2026-02-12 at 12.58.36 AM.jpeg" alt="Birthday Image 1">
+        <img src="WhatsApp Image 2026-02-12 at 12.58.36 AM(1).jpeg" alt="Birthday Image 2">
+        <img src="WhatsApp Image 2026-02-12 at 12.58.36 AM(2).jpeg" alt="Birthday Image 3">
+    </div>
 </body>
 </html>
