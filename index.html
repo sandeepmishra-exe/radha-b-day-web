@@ -3,52 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Swapna!</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            width: 300px;
-            margin: 10px;
-            border-radius: 8px;
-            transition: transform 0.2s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        h1 { color: #ff69b4; text-align: center; }
-        p { text-align: center; }
-    </style>
+    <title>Birthday Celebration</title>
 </head>
 <body>
-    <h1>Happy 19th Birthday, Swapna!</h1>
-    <p>Here are some goofy birthday messages for you:</p>
-    <ul>
-        <li>May your day be filled with cake and ice cream!</li>
-        <li>Another year older, but definitely not wiser!</li>
-        <li>You’re not getting older, you're just increasing in value!</li>
-    </ul>
-    <p>With all my love, Yours Moggu</p>
-    <h2>Image Gallery</h2>
-    <div class="gallery">
-        <img src="WhatsApp Image 2026-02-12 at 12.58.36 AM.jpeg" alt="Birthday Image 1">
-        <img src="WhatsApp Image 2026-02-12 at 12.58.36 AM(1).jpeg" alt="Birthday Image 2">
-        <img src="WhatsApp Image 2026-02-12 at 12.58.36 AM(2).jpeg" alt="Birthday Image 3">
-    </div>
+    <header>
+        <h1>Welcome to Radha's Birthday Celebration!</h1>
+    </header>
+    <main>
+        <section id="music-control">
+            <h2>Music Control</h2>
+            <audio controls>
+                <source src="birthday_song.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+        <section id="photo-gallery">
+            <h2>Photo Gallery</h2>
+            <figure>
+                <img src="photo1.jpg" alt="Birthday Photo 1">
+                <figcaption>Radha blowing out the candles.</figcaption>
+            </figure>
+            <figure>
+                <img src="photo2.jpg" alt="Birthday Photo 2">
+                <figcaption>The cake cutting ceremony.</figcaption>
+            </figure>
+            <figure>
+                <img src="photo3.jpg" alt="Birthday Photo 3">
+                <figcaption>Friends and family celebrating together.</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>Thank you for joining us!</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
