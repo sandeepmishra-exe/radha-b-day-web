@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pacifico', cursive;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #4facfe 75%, #00f2fe 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 30px;
+  padding: 40px 30px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: fadeInScale 1s ease-out;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.radhe-greeting {
+  font-size: 48px;
+  color: #ff1493;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+  letter-spacing: 2px;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.balloon {
+  position: fixed;
+  bottom: -100px;
+  width: 30px;
+  height: 40px;
+  border-radius: 50% 50% 50% 0;
+  opacity: 0.8;
+  animation: float 6s infinite ease-in;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.balloon-1 { left: 10%; background: #ff1493; }
+.balloon-2 { left: 30%; background: #00bfff; animation-delay: 1s; }
+.balloon-3 { left: 50%; background: #ffd700; animation-delay: 2s; }
+.balloon-4 { left: 70%; background: #00ff00; animation-delay: 1.5s; }
+.balloon-5 { left: 90%; background: #ff69b4; animation-delay: 2.5s; }
+
+@keyframes float {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+h1 {
+  font-size: 42px;
+  color: #ff1493;
+  margin: 20px 0;
+  animation: fadeIn 1.5s ease-out 0.3s both;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #764ba2;
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-out 0.6s both;
+  font-style: italic;
+}
+
+.message {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  margin: 25px 0;
+  animation: fadeIn 1.5s ease-out 0.9s both;
+}
+
+.goofy-lines {
+  background: #fff5f7;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 25px 0;
+  border-left: 5px solid #ff1493;
+  animation: fadeIn 1.5s ease-out 1.2s both;
+  font-size: 18px;
+  color: #e91e63;
+}
+
+.goofy-lines p {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.love-paragraph {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 25px 0;
+  animation: fadeIn 1.5s ease-out 1.5s both;
+  font-size: 18px;
+  color: #d32f2f;
+  line-height: 1.8;
+}
+
+.signature {
+  font-size: 26px;
+  color: #764ba2;
+  margin-top: 30px;
+  animation: fadeIn 1.5s ease-out 1.8s both;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heart {
+  position: fixed;
+  pointer-events: none;
+  font-size: 30px;
+  animation: heartFloat 3s ease-out forwards;
+  z-index: 0;
+}
+
+@keyframes heartFloat {
+  0% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px) translateX(50px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .radhe-greeting {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 15px 0;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .message,
+  .goofy-lines,
+  .love-paragraph {
+    font-size: 16px;
+  }
+
+  .signature {
+    font-size: 22px;
+    margin-top: 25px;
+  }
+}
